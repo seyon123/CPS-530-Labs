@@ -18,19 +18,23 @@
     <div style="background: white; min-height: 725px; padding: 10px;">
 
         <!-- Code for main content -->
-        <div id = "main" style ="height: 575px; width: 360px; margin: auto; background: #f7f7f7;  border-radius: 20px">
+        <div id = "main" style ="height: 575px; width: 360px; margin: auto; background: #f7f7f7;  border-radius: 20px" >
             <span style= "background: #0083B0; color: white; padding: 10px 28.5px; text-transform: uppercase; font-size: 18px; border-radius: 20px 20px 0px 0px">
                 Tech Shopping List For Seyon
             </span>
             <ul>
-                <li>DELL XPS 15</li>
-                <li>DELL XPS 15</li>
-                <li>DELL XPS 15</li>
-                <li>DELL XPS 15</li>
-                <li>DELL XPS 15</li>
-                <li>DELL XPS 15</li>
+                <li>DELL XPS 15 Laptop</li>
+                <li>Logitech Keyboard/Mouse</li>
+                <li>Bose Seakers</li>
+                <li>HDMI Cable</li>
+                <li>USB-C Dock</li>
+                <li>LED Light Strips</li>
+                <li>Monitor</li>
+                <li>Headphones</li>
+                <li>Wireless Earbuds</li>
             </ul>
-            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fcps530.seyonrajagopal.me%2Flab1%2Flab1.html" target="_top" style = "align-items: center;">Validator</a>
+            <h3 style= "text-align: center"><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fcps530.seyonrajagopal.me%2Flab1%2Flab1.html">Validation Report</a></h3>
+            <h3 style= "text-align: center"><a href="lab1_Report.html">Technical Report</a></h3>
         </div>
 
         <!-- Code for login -->
@@ -41,9 +45,9 @@
             
             <div style = "margin: 20px">
                 Please enter the password to view Lab 1:
-                </br>
+                <br>
                 <input type="password" id="password" onchange="checkInput()">
-                </br>
+                <br>
             </div>
             
             <i>Press enter key to submit.</i>
@@ -59,28 +63,28 @@
         <a href="mailto:seyon.rajagopal@ryerson.ca">E-mail</a>
     </footer>
 
+    <script>
+        function hideContent() {
+                document.getElementById("main").style.display = "none";
+                document.getElementById("login").style.display = "block";
+                document.getElementById("title2").style.display = "block";
+                document.getElementById("title1").style.display = "none";
+    
+            }
+    
+        function checkInput() {
+            var pass = document.getElementById("password").value;
+    
+            if (pass == "password") {
+                document.getElementById("main").style.display = "block";
+                document.getElementById("login").style.display = "none";
+                document.getElementById("title2").style.display = "none";
+                document.getElementById("title1").style.display = "block";
+            }
+        }
+    </script>
 </body>
 
-<script>
 
-    function hideContent() {
-            document.getElementById("main").style.display = "none";
-            document.getElementById("login").style.display = "block";
-            document.getElementById("title2").style.display = "block";
-            document.getElementById("title1").style.display = "none";
-
-        }
-
-    function checkInput() {
-        var pass = document.getElementById("password").value;
-
-        if (pass == "password") {
-            document.getElementById("main").style.display = "block";
-            document.getElementById("login").style.display = "none";
-            document.getElementById("title2").style.display = "none";
-            document.getElementById("title1").style.display = "block";
-        }
-    }
-</script>
 
 </html>
