@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SHopping List</title>
+    <title>Shopping List</title>
 </head>
 
-<body onload=hideContent() style="background: linear-gradient(to left, #0083B0, #00B4DB); font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
+<body onload=hideContent()
+    style="background: linear-gradient(to left, #0083B0, #00B4DB); font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
 
     <header style="background: white; padding: 10px; border-radius: 10px 10px 0px 0px; text-align: center">
         <h1 id="title1">Seyon's Shopping List</h1>
@@ -18,8 +19,9 @@
     <div style="background: white; min-height: 725px; padding: 10px;">
 
         <!-- Code for main content -->
-        <div id = "main" style ="height: 575px; width: 360px; margin: auto; background: #f7f7f7;  border-radius: 20px" >
-            <span style= "background: #0083B0; color: white; padding: 10px 28.5px; text-transform: uppercase; font-size: 18px; border-radius: 20px 20px 0px 0px">
+        <div id="main" style="height: 575px; width: 360px; margin: auto; background: #f7f7f7;  border-radius: 20px">
+            <span
+                style="background: #0083B0; color: white; padding: 10px 28.5px; text-transform: uppercase; font-size: 18px; border-radius: 20px 20px 0px 0px">
                 Tech Shopping List For Seyon
             </span>
             <ul>
@@ -33,23 +35,29 @@
                 <li>Headphones</li>
                 <li>Wireless Earbuds</li>
             </ul>
-            <h3 style= "text-align: center"><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fcps530.seyonrajagopal.me%2Flab1%2Flab1.html">Validation Report</a></h3>
-            <h3 style= "text-align: center"><a href="lab1_Report.html">Technical Report</a></h3>
+            <h3 style="text-align: center"><a
+                    href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fcps530.seyonrajagopal.me%2Flab1%2Flab1.html">Validation
+                    Report</a></h3>
+            <h3 style="text-align: center"><a href="lab1_Report.html">Technical Report</a></h3>
         </div>
 
         <!-- Code for login -->
-        <div id = "login" style ="height: 575px; width: 360px; margin: auto; background: #f7f7f7;  border-radius: 20px; text-align: center;">
-            <span style= "background: #0083B0; color: white; padding: 10px 92px; text-transform: uppercase; font-size: 18px; border-radius: 20px 20px 0px 0px">
+        <div id="login"
+            style="height: 575px; width: 360px; margin: auto; background: #f7f7f7;  border-radius: 20px; text-align: center;">
+            <span
+                style="background: #0083B0; color: white; padding: 10px 92px; text-transform: uppercase; font-size: 18px; border-radius: 20px 20px 0px 0px">
                 Enter Password:
             </span>
-            
-            <div style = "margin: 20px">
-                Please enter the password to view Lab 1:
-                <br>
+
+            <div style="margin-top: 200px">
+                Username:
+                <input type="username" id="username" onchange="checkInput()">
+                <br><br>
+                Password:
                 <input type="password" id="password" onchange="checkInput()">
-                <br>
+                <br><br>
             </div>
-            
+
             <i>Press enter key to submit.</i>
         </div>
     </div>
@@ -64,19 +72,21 @@
         <a href="mailto:seyon.rajagopal@ryerson.ca">E-mail</a>
     </footer>
 
+    <!-- Javascript that checks if input for password/username is correct and hides ansd unhides elements -->
     <script>
         function hideContent() {
-                document.getElementById("main").style.display = "none";
-                document.getElementById("login").style.display = "block";
-                document.getElementById("title2").style.display = "block";
-                document.getElementById("title1").style.display = "none";
-    
-            }
-    
+            document.getElementById("main").style.display = "none";
+            document.getElementById("login").style.display = "block";
+            document.getElementById("title2").style.display = "block";
+            document.getElementById("title1").style.display = "none";
+
+        }
+
         function checkInput() {
             var pass = document.getElementById("password").value;
-    
-            if (pass == "password") {
+            var usr = document.getElementById("username").value;
+
+            if (pass == "cps530" && usr == "lab1") {
                 document.getElementById("main").style.display = "block";
                 document.getElementById("login").style.display = "none";
                 document.getElementById("title2").style.display = "none";
@@ -85,7 +95,5 @@
         }
     </script>
 </body>
-
-
 
 </html>

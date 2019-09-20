@@ -1,132 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Technical Report</title>
 </head>
-<body style="background: linear-gradient(to left, #0083B0, #00B4DB); font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
+
+<body
+    style="background: linear-gradient(to left, #0083B0, #00B4DB); font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
 
     <!-- Code for header -->
     <header style="background: white; padding: 10px; border-radius: 10px 10px 0px 0px; text-align: center">
-            <h1>Technical Report</h1>
+        <h1>Technical Report</h1>
     </header>
 
 
-    
+
     <div style="background: white; min-height: 725px; padding: 10px">
         <h3>Code Snippet:</h3>
-        <p>Here is the code used to create the HTML file in lab 1:</p> 
-        <textarea style="width: 96%; height: 400px; padding: 10px; margin-right: 1%; margin-left: 1%">
-                <!DOCTYPE html>
-                <html lang="en">
-                
-                <head>
-                    <meta charset="UTF-8">
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-                    <title>SHopping List</title>
-                </head>
-                
-                <body onload=hideContent() style="background: linear-gradient(to left, #0083B0, #00B4DB); font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
-                
-                    <header style="background: white; padding: 10px; border-radius: 10px 10px 0px 0px; text-align: center">
-                        <h1 id="title1">Seyon's Shopping List</h1>
-                        <h1 id="title2">CPS 530 Lab 1</h1>
-                    </header>
-                
-                    <div style="background: white; min-height: 725px; padding: 10px;">
-        
-                        <!-- Code for main content -->
-                        <div id = "main" style ="height: 575px; width: 360px; margin: auto; background: #f7f7f7;  border-radius: 20px" >
-                            <span style= "background: #0083B0; color: white; padding: 10px 28.5px; text-transform: uppercase; font-size: 18px; border-radius: 20px 20px 0px 0px">
-                                Tech Shopping List For Seyon
-                            </span>
-                            <ul>
-                                <li>DELL XPS 15 Laptop</li>
-                                <li>Logitech Keyboard/Mouse</li>
-                                <li>Bose Seakers</li>
-                                <li>HDMI Cable</li>
-                                <li>USB-C Dock</li>
-                                <li>LED Light Strips</li>
-                                <li>Monitor</li>
-                                <li>Headphones</li>
-                                <li>Wireless Earbuds</li>
-                            </ul>
-                            <h3 style= "text-align: center"><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fcps530.seyonrajagopal.me%2Flab1%2Flab1.html">Validation Report</a></h3>
-                            <h3 style= "text-align: center"><a href="lab1_Report.html">Technical Report</a></h3>
-                        </div>
-                
-                        <!-- Code for login -->
-                        <div id = "login" style ="height: 575px; width: 360px; margin: auto; background: #f7f7f7;  border-radius: 20px; text-align: center;">
-                            <span style= "background: #0083B0; color: white; padding: 10px 92px; text-transform: uppercase; font-size: 18px; border-radius: 20px 20px 0px 0px">
-                                Enter Password:
-                            </span>
-                            
-                            <div style = "margin: 20px">
-                                Please enter the password to view Lab 1:
-                                <br>
-                                <input type="password" id="password" onchange="checkInput()">
-                                <br>
-                            </div>
-                            
-                            <i>Press enter key to submit.</i>
-                        </div>
+        <p>Here is the code used to create the HTML file in lab 1:</p>
+        <textarea style="width: 96%; height: 400px; padding: 10px; margin-right: 1%; margin-left: 1%" readonly>
+            <!DOCTYPE html>
+            <html lang="en">
+            
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <title>Shopping List</title>
+            </head>
+            
+            <body onload=hideContent()
+                style="background: linear-gradient(to left, #0083B0, #00B4DB); font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
+            
+                <header style="background: white; padding: 10px; border-radius: 10px 10px 0px 0px; text-align: center">
+                    <h1 id="title1">Seyon's Shopping List</h1>
+                    <h1 id="title2">CPS 530 Lab 1</h1>
+                </header>
+            
+                <div style="background: white; min-height: 725px; padding: 10px;">
+            
+                    <!-- Code for main content -->
+                    <div id="main" style="height: 575px; width: 360px; margin: auto; background: #f7f7f7;  border-radius: 20px">
+                        <span
+                            style="background: #0083B0; color: white; padding: 10px 28.5px; text-transform: uppercase; font-size: 18px; border-radius: 20px 20px 0px 0px">
+                            Tech Shopping List For Seyon
+                        </span>
+                        <ul>
+                            <li>DELL XPS 15 Laptop</li>
+                            <li>Logitech Keyboard/Mouse</li>
+                            <li>Bose Seakers</li>
+                            <li>HDMI Cable</li>
+                            <li>USB-C Dock</li>
+                            <li>LED Light Strips</li>
+                            <li>Monitor</li>
+                            <li>Headphones</li>
+                            <li>Wireless Earbuds</li>
+                        </ul>
+                        <h3 style="text-align: center"><a
+                                href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fcps530.seyonrajagopal.me%2Flab1%2Flab1.html">Validation
+                                Report</a></h3>
+                        <h3 style="text-align: center"><a href="lab1_Report.html">Technical Report</a></h3>
                     </div>
-                
-                    <!-- Code for footer -->
-                    <footer style="background: white;  padding: 10px; border-radius: 0px 0px 10px 10px; text-align: center">
-                        Created By: Seyon Rajagopal | Student No: 500885401<br>
-                        Copyright © 2019 Seyon Rajagopal. All rights reserved.<br>
-                        <a href="https://github.com/seyon123" target="_top">GitHub</a> |
-                        <a href="https://www.linkedin.com/in/seyon-rajagopal/" target="_top">LinkedIn</a> |
-                        <a href="https://www.seyonrajagopal.me" target="_top">Website</a> |
-                        <a href="mailto:seyon.rajagopal@ryerson.ca">E-mail</a>
-                    </footer>
-                
-                    <script>
-                        function hideContent() {
-                                document.getElementById("main").style.display = "none";
-                                document.getElementById("login").style.display = "block";
-                                document.getElementById("title2").style.display = "block";
-                                document.getElementById("title1").style.display = "none";
-                    
-                            }
-                    
-                        function checkInput() {
-                            var pass = document.getElementById("password").value;
-                    
-                            if (pass == "password") {
-                                document.getElementById("main").style.display = "block";
-                                document.getElementById("login").style.display = "none";
-                                document.getElementById("title2").style.display = "none";
-                                document.getElementById("title1").style.display = "block";
-                            }
+            
+                    <!-- Code for login -->
+                    <div id="login"
+                        style="height: 575px; width: 360px; margin: auto; background: #f7f7f7;  border-radius: 20px; text-align: center;">
+                        <span
+                            style="background: #0083B0; color: white; padding: 10px 92px; text-transform: uppercase; font-size: 18px; border-radius: 20px 20px 0px 0px">
+                            Enter Password:
+                        </span>
+            
+                        <div style="margin-top: 200px">
+                            Username:
+                            <input type="username" id="username" onchange="checkInput()">
+                            <br><br>
+                            Password:
+                            <input type="password" id="password" onchange="checkInput()">
+                            <br><br>
+                        </div>
+            
+                        <i>Press enter key to submit.</i>
+                    </div>
+                </div>
+            
+                <!-- Code for footer -->
+                <footer style="background: white;  padding: 10px; border-radius: 0px 0px 10px 10px; text-align: center">
+                    Created By: Seyon Rajagopal | Student No: 500885401<br>
+                    Copyright © 2019 Seyon Rajagopal. All rights reserved.<br>
+                    <a href="https://github.com/seyon123" target="_top">GitHub</a> |
+                    <a href="https://www.linkedin.com/in/seyon-rajagopal/" target="_top">LinkedIn</a> |
+                    <a href="https://www.seyonrajagopal.me" target="_top">Website</a> |
+                    <a href="mailto:seyon.rajagopal@ryerson.ca">E-mail</a>
+                </footer>
+            
+                <!-- Javascript that checks if input for password/username is correct and hides ansd unhides elements -->
+                <script>
+                    function hideContent() {
+                        document.getElementById("main").style.display = "none";
+                        document.getElementById("login").style.display = "block";
+                        document.getElementById("title2").style.display = "block";
+                        document.getElementById("title1").style.display = "none";
+
+                    }
+
+                    function checkInput() {
+                        var pass = document.getElementById("password").value;
+                        var usr = document.getElementById("username").value;
+
+                        if (pass == "cps530" && usr == "lab1") {
+                            document.getElementById("main").style.display = "block";
+                            document.getElementById("login").style.display = "none";
+                            document.getElementById("title2").style.display = "none";
+                            document.getElementById("title1").style.display = "block";
                         }
-                    </script>
-                </body>
- 
-                </html>
+                    }
+                </script>
+            </body>
+            
+            </html>
         </textarea>
 
         <h3>How did you password protect your page?</h3>
-        <p>I password protected the page using javascript and adding and removing elements within the page. Within javascript 
-           I made a function that would check if the password entered is correct. If the password is correct the div with password 
-           is removed and the div with the content of the website is revealed. There is also a function that hides the divs except
-           for the one with the password when the website loads. This is achived with the code: 
-           document.getElementById("element").style.display = "block"; or document.getElementById("element").style.display = "none";</p>
+        <p>I password protected the page using javascript and adding and removing elements within the page. Within
+            javascript
+            I made a function that would check if the password entered is correct. If the password is correct, the div
+            with the username and password
+            is removed and the div with the content of the website is revealed. There is also a function that hides the
+            elements except
+            for the one with the username and password when the website loads. This is achived with the code:
+            document.getElementById("element").style.display = "block"; or
+            document.getElementById("element").style.display = "none";</p>
 
         <h3>What new tag did you try? What was its effect?</h3>
-        <p>The new tag I used was the textarea tag in my labreport html file. It was used to create a scrollable text area that had the code used 
-            for the lab1 html file. It helped display the code without taking up alot of room on the webpage and helped avoid having to change special 
+        <p>The new tag I used was the textarea tag in my labreport html file. It was used to create a scrollable text
+            area that had the code used
+            for the lab1 html file. It helped display the code without taking up alot of room on the webpage and helped
+            avoid having to change special
             characters in html when displaying.</p>
-        
-        <h3>Does your page look different in different browsers and platforms(IE/Edge/Firefox/Chrome/Safari - desktop/tablet/phone)? If yes, what are the main differences?</h3>
-        <p>The webpage doesnt look different on other devices.</p>
+
+        <h3>Does your page look different in different browsers and platforms(IE/Edge/Firefox/Chrome/Safari -
+            desktop/tablet/phone)? If yes, what are the main differences?</h3>
+        <p>The webpage doesnt look much different on other devices. Only big difference is whem viewing the website on a
+            smaller screen where items can get squished and may look wierd.</p>
 
         <h3>How long did you spend on this lab?</h3>
-        <p>This lab didn't take long. The part that took long was styling which wasnt required. The lab aproximately took 2 hours.</p>
+        <p>This lab didn't take long. The part that took long was styling which wasnt required. The lab aproximately
+            took 2 -3 hours.</p>
 
     </div>
 
@@ -139,6 +161,7 @@
         <a href="https://www.seyonrajagopal.me" target="_top">Website</a> |
         <a href="mailto:seyon.rajagopal@ryerson.ca">E-mail</a>
     </footer>
-    
+
 </body>
+
 </html>
