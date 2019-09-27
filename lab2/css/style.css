@@ -11,10 +11,15 @@ body {
 
 }
 
-table {
+#main .grid {
     width: 100%;
     padding: 20px;
 
+}
+
+
+#main .grid .tablehead{
+    font-size: 24px;
 }
 
 .pic {
