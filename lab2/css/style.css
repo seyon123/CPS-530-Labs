@@ -48,7 +48,6 @@ code {
 
 #buttons {
     background: white;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 }
 
 #buttons a:link, #buttons a:visited {
