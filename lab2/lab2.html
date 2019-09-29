@@ -9,44 +9,64 @@
 
 </head>
 
-<body>
+<body onload=hideContent()>
 
     <header>
         <h1 id="title">Welcome to Lab 2</h1>
     </header>
 
-    <div id="main">
-        <table class="grid" style="width:100%">
-            <tr>
-                <th class="tablehead" colspan="3">Seyon's Photo Gallery</th>
-            </tr>
-            <tr>
-                <td><img class="pic" src="images/img1.jpg" alt="Image">
-                </td>
-                <td><img class="pic" src="images/img2.jpg" alt="Image">
-                </td>
-                <td><img class="pic" src="images/img3.jpg" alt="Image">
-                </td>
-            </tr>
-            <tr>
-                <td><img class="pic" src="images/img4.jpg" alt="Image">
-                </td>
-                <td><img class="pic" src="images/img5.jpg" alt="Image">
-                </td>
-                <td><img class="pic" src="images/img6.jpg" alt="Image">
-                </td>
-            </tr>
-            <tr>
-                <td><img class="pic" src="images/img7.jpg" alt="Image">
-                </td>
-                <td><img class="pic" src="images/img8.jpg" alt="Image">
-                </td>
-                <td><img class="pic" src="images/img9.jpg" alt="Image">
-                </td>
-            </tr>
-        </table>
-    </div>
+    <div id = "background">
 
+        <div id="main">
+            <table id="table">
+                <tr>
+                    <th class="tablehead" colspan="3">Seyon's Photo Gallery</th>
+                </tr>
+                <tr>
+                    <td><img class="pic" src="images/img1.jpg" alt="Image">
+                    </td>
+                    <td><img class="pic" src="images/img2.jpg" alt="Image">
+                    </td>
+                    <td><img class="pic" src="images/img3.jpg" alt="Image">
+                    </td>
+                </tr>
+                <tr>
+                    <td><img class="pic" src="images/img4.jpg" alt="Image">
+                    </td>
+                    <td><img class="pic" src="images/img5.jpg" alt="Image">
+                    </td>
+                    <td><img class="pic" src="images/img6.jpg" alt="Image">
+                    </td>
+                </tr>
+                <tr>
+                    <td><img class="pic" src="images/img7.jpg" alt="Image">
+                    </td>
+                    <td><img class="pic" src="images/img8.jpg" alt="Image">
+                    </td>
+                    <td><img class="pic" src="images/img9.jpg" alt="Image">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+
+        <div id="login">
+            <span class = "login-title">
+                Enter Password:
+            </span>
+
+            <div class= "prompt">
+                Username:
+                <input type="text" id="username" onchange="checkInput()">
+                <br><br>
+                Password:
+                <input type="password" id="password" onchange="checkInput()">
+                <br><br>
+            </div>
+
+            <i>Press enter key to submit.</i>
+        </div>
+    </div>
     <div id="buttons">
         <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fcps530.seyonrajagopal.me%2Flab2%2Flab2.html">Validation Report</a>
         <a href="lab2_Report.html">Technical Report</a>
@@ -61,6 +81,24 @@
         <a href="mailto:seyon.rajagopal@ryerson.ca">E-mail</a>
     </footer>
 
+    <script>
+        function hideContent() {
+            document.getElementById("main").style.display = "none";
+            document.getElementById("login").style.display = "block";
+
+        }
+
+        function checkInput() {
+            var pass = document.getElementById("password").value;
+            var usr = document.getElementById("username").value;
+
+            if (pass == "cps530" && usr == "lab2") {
+                document.getElementById("main").style.display = "block";
+                document.getElementById("login").style.display = "none";
+
+            }
+        }
+    </script>
 </body>
 
 </html>
