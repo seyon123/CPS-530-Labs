@@ -1,0 +1,22 @@
+#content{
+    background: linear-gradient(to right, #bdc3c7, #92a3b3);
+    font-family:verdana,arial,helvetica;
+    color:#336699;
+    font-size:12pt; 
+    margin-top: 75px;
+    padding: 10px;
+}
+
+nav.navbar{
+    padding: 20px;
+}
+
+img{
+    margin-top: 25px;
+    height: 125px;
+    float: right;
+
+}
+#myNavbar{
+    margin-top: 10px;
+}
