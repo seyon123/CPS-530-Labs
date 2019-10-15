@@ -1,0 +1,39 @@
+html {
+    position:relative;
+    min-height: 100%;
+    font-size: 1.5em;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #222222;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:120px;
+}
+
+#content{
+    background: linear-gradient(to right, #bdc3c7, #92a3b3); 
+    padding: 10px;
+    padding-top: 30px;
+    margin-bottom: 120px;
+    
+}
+
+nav.navbar{
+    padding: 20px;
+}
+
+img{
+    margin-top: 25px;
+    height: 125px;
+    float: right;
+
+}
+#myNavbar{
+    margin-top: 10px;
+}
+

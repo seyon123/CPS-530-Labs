@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gallery</title>
+</head>
+
+<body>
+
+    <div class="w3-container w3-center">
+        <h2>Gallery</h2>
+        <p>Images of cities and wonders from across the world.</p>
+    </div>
+
+    <div id="content" class="w3-content">
+        <img class="w3-round-large slides" onclick="document.getElementById('id01').style.display='block'"
+            src="images/img1.jpg" style="width:100%">
+        <img class="w3-round-large slides" onclick="document.getElementById('id02').style.display='block'"
+            src="images/img2.jpg" style="width:100%">
+        <img class="w3-round-large slides" onclick="document.getElementById('id03').style.display='block'"
+            src="images/img3.jpg" style="width:100%">
+        <img class="w3-round-large slides" onclick="document.getElementById('id04').style.display='block'"
+            src="images/img4.jpg" style="width:100%">
+        <img class="w3-round-large slides" onclick="document.getElementById('id05').style.display='block'"
+            src="images/img5.jpg" style="width:100%">
+        <img class="w3-round-large slides" onclick="document.getElementById('id06').style.display='block'"
+            src="images/img6.jpg" style="width:100%">
+        <img class="w3-round-large slides" onclick="document.getElementById('id07').style.display='block'"
+            src="images/img7.jpg" style="width:100%">
+        <img class="w3-round-large slides" onclick="document.getElementById('id08').style.display='block'"
+            src="images/img8.jpg" style="width:100%">
+
+        <div id="buttons" class="w3-center">
+            <button class="w3-button w3-round cimg" onclick="currentDiv(1)">1</button>
+            <button class="w3-button w3-round cimg" onclick="currentDiv(2)">2</button>
+            <button class="w3-button w3-round cimg" onclick="currentDiv(3)">3</button>
+            <button class="w3-button w3-round cimg" onclick="currentDiv(4)">4</button>
+            <button class="w3-button w3-round cimg" onclick="currentDiv(5)">5</button>
+            <button class="w3-button w3-round cimg" onclick="currentDiv(6)">6</button>
+            <button class="w3-button w3-round cimg" onclick="currentDiv(7)">7</button>
+            <button class="w3-button w3-round cimg" onclick="currentDiv(8)">8</button>
+            <div class="w3-section">
+                <button class="w3-button w3-round w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+                <button class="w3-button w3-round w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+            </div>
+        </div>
+        <div class="w3-container w3-center">
+            <i> You may click on each image to view it bigger and learn more about it.</i>
+        </div>
+    </div>
+
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+            <header class="w3-container w3-blue">
+                <span onclick="document.getElementById('id01').style.display='none'"
+                    class="w3-button w3-display-topright">&times;</span>
+                <h2>Street Photography</h2>
+            </header>
+            <img src="images/img1.jpg" style="width:100%">
+        </div>
+    </div>
+    
+    <div id="id02" class="w3-modal">
+        <div class="w3-modal-content">
+            <header class="w3-container w3-blue">
+                <span onclick="document.getElementById('id02').style.display='none'"
+                    class="w3-button w3-display-topright">&times;</span>
+                <h2>Street Photography</h2>
+            </header>
+            <img src="images/img2.jpg" style="width:100%">
+        </div>
+    </div>
+    
+    <div id="id03" class="w3-modal">
+        <div class="w3-modal-content">
+            <header class="w3-container w3-blue">
+                <span onclick="document.getElementById('id03').style.display='none'"
+                    class="w3-button w3-display-topright">&times;</span>
+                <h2>Street Photography</h2>
+            </header>
+            <img src="images/img3.jpg" style="width:100%">
+        </div>
+    </div>
+    
+    <div id="id04" class="w3-modal">
+        <div class="w3-modal-content">
+            <header class="w3-container w3-blue">
+                <span onclick="document.getElementById('id04').style.display='none'"
+                    class="w3-button w3-display-topright">&times;</span>
+                <h2>Street Photography</h2>
+            </header>
+            <img src="images/img4.jpg" style="width:100%">
+        </div>
+    </div>
+    
+    <div id="id05" class="w3-modal">
+        <div class="w3-modal-content">
+            <header class="w3-container w3-blue">
+                <span onclick="document.getElementById('id05').style.display='none'"
+                    class="w3-button w3-display-topright">&times;</span>
+                <h2>Street Photography</h2>
+            </header>
+            <img src="images/img5.jpg" style="width:100%">
+        </div>
+    </div>
+    
+    <div id="id06" class="w3-modal">
+        <div class="w3-modal-content">
+            <header class="w3-container w3-blue">
+                <span onclick="document.getElementById('id06').style.display='none'"
+                    class="w3-button w3-display-topright">&times;</span>
+                <h2>Street Photography</h2>
+            </header>
+            <img src="images/img6.jpg" style="width:100%">
+        </div>
+    </div>
+    
+    <div id="id07" class="w3-modal">
+        <div class="w3-modal-content">
+            <header class="w3-container w3-blue">
+                <span onclick="document.getElementById('id07').style.display='none'"
+                    class="w3-button w3-display-topright">&times;</span>
+                <h2>Street Photography</h2>
+            </header>
+            <img src="images/img7.jpg" style="width:100%">
+        </div>
+    </div>
+    
+    <div id="id08" class="w3-modal">
+        <div class="w3-modal-content">
+            <header class="w3-container w3-blue">
+                <span onclick="document.getElementById('id08').style.display='none'"
+                    class="w3-button w3-display-topright">&times;</span>
+                <h2>Street Photography</h2>
+            </header>
+            <img src="images/img8.jpg" style="width:100%">
+        </div>
+    </div>
+
+
+    <div id="footer" class="w3-container w3-grey">
+        <p>Created By: Seyon Rajagopal | Student No: 500885401<br>
+            Copyright © 2019 Seyon Rajagopal. All rights reserved.<br></p>
+        <a href="https://github.com/seyon123" target="_top">GitHub</a> |
+        <a href="https://www.linkedin.com/in/seyon-rajagopal/" target="_top">LinkedIn</a> |
+        <a href="https://www.seyonrajagopal.me" target="_top">Website</a> |
+        <a href="mailto:seyon.rajagopal@ryerson.ca">E-mail</a>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("slides");
+            var dots = document.getElementsByClassName("cimg");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-blue", "");
+            }
+            x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " w3-blue";
+        }
+    </script>
+
+</body>
+
+</html>
